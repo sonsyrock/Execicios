@@ -13,10 +13,10 @@ public class Main {
         double B = s.nextDouble();
         double C = s.nextDouble();
 
-        double peso = A*2 + B*3 + C*5;
+        double peso = (A*2 + B*3 + C*5) / 10;
 
 
-        System.out.println("MEDIA = " + df.format(peso / 10));
+        System.out.println("MEDIA = " + df.format(peso));
     };
 
 };
