@@ -21,7 +21,8 @@ public class Main {
         double comissao = vendas * 0.15;
         double total = comissao + salario;
 
-        System.out.println("TOTAL = " + df.format(total));
+        System.out.println("TOTAL = R$ " + df.format(total));
+        
 
        
     }
