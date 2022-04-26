@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner s = new Scanner (System.in);
         DecimalFormat df = new DecimalFormat(".00");
 
@@ -25,6 +25,6 @@ public class Main {
 
       
 
-        System.out.println("VALOR A PAGAR : R$" + df.format(total));
+        System.out.println("VALOR A PAGAR: R$ " + df.format(total));
     }
 }
