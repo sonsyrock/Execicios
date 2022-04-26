@@ -23,7 +23,6 @@ public class Main {
 
         System.out.println("TOTAL = R$ " + df.format(total));
         
-
        
     }
 }
