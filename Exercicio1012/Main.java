@@ -1,33 +1,29 @@
 package Exercicio1012;
 
 import java.io.IOException;
-import java.text.DecimalFormat;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args)throws IOException {
-        Locale.setDefault(Locale.US);
-        try (Scanner s = new Scanner(System.in)) {
-            DecimalFormat df = new DecimalFormat(".000");
+        Scanner s = new Scanner(System.in); 
 
             double PI = 3.14159;
             double A = s.nextDouble();
             double B = s.nextDouble();
             double C = s.nextDouble();
 
-            double areaTrianguloRetangulo = (A*C)/2.0;
-            double areaCirculo = PI * Math.pow(C,2);
-            double areaTrapezio = ((A+B)*C)/2.0;
-            double areaQuadrado = B*B;
-            double areaRetangulo = A*B;
+            double triangulo= (A * C) / 2;
+            double circulo= PI * (C * C);
+            double trapezio= (A + B) / 2 *  C;
+            double quadrado= (B * B);
+            double retangulo= (A * B);
             
 
-            System.out.println("TRIANGULO: " + df.format (areaTrianguloRetangulo));
-            System.out.println("CIRCULO: " + df.format(areaCirculo));
-            System.out.println("TRAPEZIO: " + df.format(areaTrapezio));
-            System.out.println("QUADRADO: " + df.format(areaQuadrado));
-            System.out.println("RETANGULO: " + df.format(areaRetangulo));
-        }
+        System.out.println(String.format("TRIANGULO: %.3f", triangulo));
+        System.out.println(String.format("CIRCULO: %.3f", circulo));
+        System.out.println(String.format("TRAPEZIO: %.3f", trapezio));
+        System.out.println(String.format("QUADRADO: %.3f", quadrado));
+        System.out.println(String.format("RETANGULO: %.3f", retangulo));  
+        
     }
 }
